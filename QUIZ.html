@@ -1,0 +1,187 @@
+<html>
+<head>
+	<title>
+		QUIZ
+	</title>
+	<style>
+body
+{
+	background:linear-gradient(to bottom, #333300 0%, #ccffff 100%);;
+	color:#fff;
+	font-family:'Arial',sans-serif;
+	font-size: 14px;
+}
+.container{
+	width:60%;
+	background:#008B8B;
+	margin:20px auto;
+	overflow:auto;
+	padding:25px;
+}
+header{
+	  text-algin:center;
+	  border-bottom:#fff dashed 1px;
+}
+input[type='submit']{
+	background:#f06226;
+	color:#fff;
+	border:0px;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+#results h3{
+	background: #f06226;
+	padding:10px;
+	margin:10px 0px;
+}
+#results span{
+	color:#000;
+	font-weight:bold;
+}
+</style>
+ <script>
+ 	function submitAnswers()
+{
+	var total=10;
+	var score=0;
+	var q1=document.forms["quizform"]["opt1"].value;
+	var q2=document.forms["quizform"]["opt2"].value;
+	var q3=document.forms["quizform"]["opt3"].value;
+	var q4=document.forms["quizform"]["opt4"].value;
+	var q5=document.forms["quizform"]["opt5"].value;
+	var q6=document.forms["quizform"]["opt6"].value;
+	var q7=document.forms["quizform"]["opt7"].value;
+	var q8=document.forms["quizform"]["opt8"].value;
+	var q9=document.forms["quizform"]["opt9"].value;
+	var q10=document.forms["quizform"]["opt10"].value;
+	 if(q1==null||q1=='')
+	 {
+	 	alert('you missed question 1');
+	 	return false;
+	 }
+	 if(q2==null||q2=='')
+	 {
+	 	alert('you missed question 2');
+	 	return false;
+	 }
+	 if(q3==null||q3=='')
+	 {
+	 	alert('you missed question 3');
+	 	return false;
+	 }
+	 if(q4==null||q4=='')
+	 {
+	 	alert('you missed question 4');
+	 	return false;
+	 }
+	 if(q5==null||q5=='')
+	 {
+	 	alert('you missed question 5');
+	 	return false;
+	 }
+	 if(q6==null||q6=='')
+	 {
+	 	alert('you missed question 6');
+	 	return false;
+	 }
+	 if(q7==null||q7=='')
+	 {
+	 	alert('you missed question 7');
+	 	return false;
+	 }
+	 if(q8==null||q8=='')
+	 {
+	 	alert('you missed question 8');
+	 	return false;
+	 }
+	 if(q9==null||q9=='')
+	 {
+	 	alert('you missed question 9');
+	 	return false;
+	 }
+	 if(q10==null||q10=='')
+	 {
+	 	alert('you missed question 10');
+	 	return false;
+	 }
+	 var answers=["a","a","a","a","d","d","c","a","a","a"];
+	 for(i=1;i<=total;i++)
+	 {
+	 	if(eval('q'+i)==answers[i-1])
+	 	{
+	 		score++;
+	 	}
+	 }
+
+	alert('you scored '+score+' out of '+total);
+
+}
+ </script>
+</head>
+<body>
+	<div class="container">
+<header>
+<h1 align="center"> SIMPLE BLOCKCHAIN QUIZ </h1>
+<p align="center"> Test your knowledge in <strong> Blockchain Fundamentals </strong> </p>
+</header>
+<div id="results">
+	 </div>
+   <p> <strong> 1.What does P2P stand for? </strong> </p>
+	<form name="quizform" onsubmit="return submitAnswers()">
+	<input type="radio" name="opt1" value="a"> a.<b>Password to Password</b> <br>
+	<input type="radio" name="opt1" value="b"> b. <b>Peer to Peer</b> <br>
+    <input type="radio" name="opt1" value="c"> c. <b>Product to Product</b> <br>
+	<input type="radio" name="opt1" value="d"> d.<b>Private Key to Public Key</b> <br>
+  <p> <strong> 2.Who created Bitcoin?</strong> </p>
+	<input type="radio" name="opt2" value="a"> a.<b>Satoshi Nakamoto</b> <br>
+	<input type="radio" name="opt2" value="b"> b. <b>Samsung</b> <br>
+	<input type="radio" name="opt2" value="c"> c. <b>John Mcafee</b> <br>
+	<input type="radio" name="opt2"value="d"> d.<b>China</b> <br>
+  <p> <strong> 3.Where is the LEAST SAFE place to keep your cryptocurrency?</strong> </p>
+	<input type="radio" name="opt3" value="a"> a.<b>In your pocket</b> <br>
+	<input type="radio" name="opt3" value="b"> b. <b>On an exchange</b> <br>
+	<input type="radio" name="opt3" value="c"> c.<b>On a hot wallet</b> <br>
+	<input type="radio" name="opt3"value="d"> d.<b>At your work desk</b> <br>
+  <p> <strong>4.What is a blockchain?</strong> </p>
+	<input type="radio" name="opt4" value="a"> a.<b>A distributed ledger on a peer to peer network</b> <br>
+	<input type="radio" name="opt4" value="b"> b. <b>A type of cryptocurrency</b> <br>
+	<input type="radio" name="opt4" value="c"> c.<b>An exchange</b> <br>
+	<input type="radio" name="opt4"value="d"> d.<b>A centralized ledger</b> <br>
+  <p> <strong>5. Which is NOT a part of asymmetric encryption?</strong> </p>
+	<input type="radio" name="opt5" value="a"> a.<b> Mining</b> <br>
+	<input type="radio" name="opt5" value="b"> b. <b>Public key</b> <br>
+	<input type="radio" name="opt5" value="c"> c.<b> Passphrase</b> <br>
+	<input type="radio" name="opt5"value="d"> d.<b>Private Key</b> <br>
+  <p> <strong>6. What is a DAPP?</strong> </p>
+	<input type="radio" name="opt6" value="a"> a.<b>  A type of Cryptocurrency</b> <br>
+	<input type="radio" name="opt6" value="b"> b. <b>A condiment</b> <br>
+	<input type="radio" name="opt6" value="c"> c.<b> A type of Blockchain</b> <br>
+	<input type="radio" name="opt6"value="d"> d.<b>A Decentralized Application</b> <br>
+  <p> <strong>7.  What is the term for when a Blockchain splits?</strong> </p>
+	<input type="radio" name="opt7" value="a"> a.<b>A fork</b> <br>
+	<input type="radio" name="opt7" value="b"> b. <b>A merger</b> <br>
+	<input type="radio" name="opt7" value="c"> c.<b> A sidechain</b> <br>
+	<input type="radio" name="opt7"value="d"> d.<b>A division</b> <br>
+   <p> <strong>8.What is a genesis block?</strong> </p>
+	<input type="radio" name="opt8" value="a"> a.<b>The first block of a blockchain</b> <br>
+	<input type="radio" name="opt8" value="b"> b. <b>A famous block that hardcoded a hash of the Book of Genesis onto the blockchain</b> <br>
+	<input type="radio" name="opt8" value="c"> c.<b>The first block after each block halving</b> <br>
+	<input type="radio" name="opt8"value="d"> d.<b>The 2nd transaction of a blockchain</b> <br>
+   <p> <strong>9.What powers the Ethereum Virtual Machine?</strong> </p>
+	<input type="radio" name="opt9" value="a"> a.<b> Gas</b> <br>
+	<input type="radio" name="opt9" value="b"> b. <b>Ether</b> <br>
+	<input type="radio" name="opt9" value="c"> c.<b>Bitcoin</b> <br>
+	<input type="radio" name="opt9"value="d"> d.<b> Block Rewards</b> <br>
+  <p> <strong>10.Who invented Merkle Trees?</strong> </p>
+	<input type="radio" name="opt10" value="a"> a.<b>Ralph Merkle</b> <br>
+	<input type="radio" name="opt10" value="b"> b. <b> Ralph Wiggum</b> <br>
+	<input type="radio" name="opt10" value="c"> c.<b>Nick Szabo</b> <br>
+	<input type="radio" name="opt10"value="d"> d.<b>Vitalik Buterin</b> <br>
+    <input type="submit" name="sub" value="submit"> <br>
+	</form>
+</div>
+</body>
+</html>
+
+  
+  
